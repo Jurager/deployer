@@ -1,0 +1,22 @@
+{
+  "current":"green",
+  "commands":{
+    "prepare":[
+      "git pull"
+    ],
+    "install":[
+      "npm i"
+    ],
+    "build":[
+      "npm run build"
+    ],
+    "restart":[
+      "supervisorctl start merchant-#NEXT_COLOR#",
+      "supervisorctl stop merchant-#CURRENT_COLOR#"
+    ]
+  },
+  "logging":{
+    "enabled":true,
+    "file":"deployer.log"
+  }
+}
