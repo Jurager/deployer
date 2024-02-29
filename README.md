@@ -1,6 +1,6 @@
 # Jurager/Deployer #
 
-This is the simple bash script to implement zero-downtime deployment with some NodeJS frameworks, also can be used to automate deployment of your any other applications.
+This bash script provides a straightforward method for achieving zero-downtime deployment with various NodeJS frameworks, and it can also automate the deployment process for other types of applications.
 
 ## Requirements ##
 
@@ -28,6 +28,7 @@ In this example we have application written over NuxtJS, serve it using Nginx.
 
 We want to implement green/blue (zero-downtime) deployment on this application.
 
+> [!NOTE]
 > We use two applications at once. At the time of deployment, we build the application which is not running. When all deployment task is done, one application is stopped another is starting. At this moment Nginx  switches to another upstream, transparently to user.
 
 First, define the upstream in Nginx with sample configuration
@@ -134,3 +135,7 @@ To run the deployment process, run following command in directory with configura
 ```shell
 cd /home/myapp && deployer.sh
 ```
+
+## License
+
+This package is open-sourced software licensed under the [MIT license](LICENSE.md).
