@@ -20,7 +20,9 @@ sudo dnf install jq
 
 ## Installation ##
 
-Download `deployer.sh`, move it in your project directory (see usage), or install globally by moving to `/usr/local/bin`
+```sh
+curl -fsSL https://raw.githubusercontent.com/Jurager/deployer/master/deployer.sh | sudo tee /usr/local/bin/deployer.sh > /dev/null && sudo chmod +x /usr/local/bin/deployer.sh
+```
 
 ## Usage ##
 
