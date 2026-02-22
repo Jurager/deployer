@@ -4,7 +4,7 @@ This bash script provides a straightforward method for achieving zero-downtime d
 
 ## Requirements ##
 
-For reading `deploy.config.json` configuration, additional packages is required.
+For reading `deployer.config.json` configuration, additional packages is required.
 
 To install Ubuntu/Debian
 
