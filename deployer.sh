@@ -46,10 +46,10 @@ trap 'rm -f "$SCRIPT_LOCK"; exit $?' INT TERM EXIT
 error()
 {
    # Output
-   echo "$(tput setaf 1)$1$(tput sgr 0)"
+   echo "$(tput setaf 1)$1$(tput sgr 0)" >&2
 
    # Terminate
-   exit 0
+   exit 1
 }
 
 # Show help
